@@ -19,7 +19,7 @@
             android:name=".SignUp"
             android:exported="false" />
         <activity
-            android:name=".Login"
+            android:name="com.example.craftopia_master.Login"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
