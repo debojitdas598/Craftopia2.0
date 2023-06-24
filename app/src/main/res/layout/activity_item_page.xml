@@ -1,0 +1,992 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:scrollbars="none"
+    tools:context=".ItemPage">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:cardElevation="10dp">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="350dp"
+                android:id= "@+id/img"
+                android:src="@drawable/img" />
+
+        </androidx.cardview.widget.CardView>
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="190dp"
+            android:layout_marginTop="15dp"
+            app:cardElevation="15dp">
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:layout_width="match_parent"
+                android:layout_height="190dp"
+                android:elevation="15dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/sellerName"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="15dp"
+                    android:text="Gallery99"
+                    android:textColor="@color/lightorange"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/itemName"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginRight="80dp"
+                    android:text="Handmade and painted Tea Pot set in Ceramic and etc etc etc"
+                    android:textSize="16dp" />
+
+                <androidx.appcompat.widget.LinearLayoutCompat
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_marginHorizontal="15dp"
+                    android:layout_marginTop="10dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="bottom"
+                        android:text="MRP"
+                        android:textStyle="bold"
+
+                        />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="bottom"
+                        android:text=" ₹499"
+                        android:id="@+id/cp"
+
+                        />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="bottom"
+                        android:text=" ₹375"
+                        android:id="@+id/sp"
+                        android:textSize="20dp"
+                        />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="bottom"
+                        android:id="@+id/discountpercent"
+                        android:text="    25% off" />
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="60dp"
+                        android:layout_height="35dp"
+                        android:layout_marginLeft="110dp"
+                        app:cardCornerRadius="10dp"
+                        app:cardElevation="5dp">
+
+                        <androidx.appcompat.widget.LinearLayoutCompat
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="horizontal">
+
+                            <androidx.appcompat.widget.AppCompatImageView
+                                android:layout_width="20dp"
+                                android:layout_height="20dp"
+                                android:layout_gravity="center"
+                                android:layout_marginLeft="5dp"
+
+                                android:src="@drawable/star" />
+
+                            <TextView
+                                android:id="@+id/rating"
+                                android:layout_width="20dp"
+                                android:layout_height="20dp"
+                                android:layout_gravity="center"
+                                android:layout_marginLeft="5dp"
+                                android:text="4.2" />
+
+                        </androidx.appcompat.widget.LinearLayoutCompat>
+
+                    </androidx.cardview.widget.CardView>
+
+
+                </androidx.appcompat.widget.LinearLayoutCompat>
+
+                <androidx.appcompat.widget.LinearLayoutCompat
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <ImageView
+                        android:id="@+id/buynow"
+                        android:layout_width="wrap_content"
+                        android:layout_height="50dp"
+                        android:layout_marginLeft="15dp"
+                        android:layout_weight="1"
+                        android:src="@drawable/buynow" />
+
+                    <ImageView
+                        android:id="@+id/addtocart"
+                        android:layout_width="wrap_content"
+                        android:layout_height="50dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="15dp"
+                        android:layout_weight="1"
+                        android:src="@drawable/addtocart" />
+
+
+                </androidx.appcompat.widget.LinearLayoutCompat>
+
+
+            </androidx.appcompat.widget.LinearLayoutCompat>
+
+
+        </androidx.cardview.widget.CardView>
+
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_marginTop="15dp"
+            android:layout_height="180dp"
+            app:cardElevation="15dp">
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Check Delivery"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginLeft="15dp"
+                    android:textStyle="bold"
+                    android:textColor="@color/lightorange"
+                    android:textSize="15dp"/>
+
+                <EditText
+                    android:layout_width="250dp"
+                    android:layout_height="40dp"
+                    android:layout_margin="15dp"
+                    android:background="@drawable/round_boarder"
+                    android:hint="  Enter Pin"
+                    android:inputType="number"
+                    android:textSize="15dp"/>
+
+                <androidx.appcompat.widget.LinearLayoutCompat
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginHorizontal="15dp"
+                    >
+                    <ImageView
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:src="@drawable/cashondelivery"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="  Cash on Delivery might be available"
+                        android:layout_margin="6dp"/>
+
+                </androidx.appcompat.widget.LinearLayoutCompat>
+
+                <androidx.appcompat.widget.LinearLayoutCompat
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginHorizontal="15dp"
+                    >
+                    <ImageView
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:src="@drawable/returnback"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="  Return/Exchange might be available*"
+                        android:layout_margin="6dp"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="12dp"
+                        android:text="Return Policy"
+                        android:textColor="@color/lightorange"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="8dp"
+                        android:gravity="bottom"
+                        />
+
+                </androidx.appcompat.widget.LinearLayoutCompat>
+
+            </androidx.appcompat.widget.LinearLayoutCompat>
+
+        </androidx.cardview.widget.CardView>
+
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_marginTop="15dp"
+            android:layout_height="wrap_content"
+            app:cardElevation="15dp">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_margin="15dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/lightorange"
+                    android:text="Product Details"
+                    android:textStyle="bold"
+                    android:textSize="15dp"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/black"
+                    android:layout_marginTop="10dp"
+                    android:id="@+id/productdetails"
+                    android:text="Experience the art of tea with our exquisite handmade and painted ceramic tea pot set. Crafted with love and care, this set features a charming teapot with a comfortable handle and precise spout. The intricate hand-painted designs add a touch of elegance to each piece, including matching tea cups. Perfect for tea enthusiasts and collectors, this set is a beautiful addition to any tea table. Elevate your tea-drinking experience with our stunning ceramic tea pot set."
+                    android:textSize="15dp"/>
+
+            </LinearLayout>
+
+
+
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_marginTop="15dp"
+            android:layout_height="430dp"
+            app:cardElevation="15dp">
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Customer Reviews"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginLeft="15dp"
+                    android:textStyle="bold"
+                    android:textColor="@color/lightorange"
+                    android:textSize="15dp"/>
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginHorizontal="15dp">
+
+                    <androidx.appcompat.widget.LinearLayoutCompat
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <androidx.appcompat.widget.LinearLayoutCompat
+                            android:layout_width="match_parent"
+                            android:orientation="horizontal"
+                            android:layout_margin="5dp"
+                            android:layout_height="wrap_content">
+                            <androidx.cardview.widget.CardView
+                                android:layout_width="60dp"
+                                android:layout_height="35dp"
+                                android:layout_marginVertical="5dp"
+                                android:layout_marginLeft="12dp"
+                                android:layout_marginTop="5dp"
+                                app:cardCornerRadius="10dp"
+                                >
+
+                                <androidx.appcompat.widget.LinearLayoutCompat
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:orientation="horizontal">
+
+                                    <androidx.appcompat.widget.AppCompatImageView
+                                        android:layout_width="20dp"
+                                        android:layout_height="20dp"
+                                        android:layout_gravity="center"
+                                        android:layout_marginLeft="5dp"
+
+                                        android:src="@drawable/star" />
+
+                                    <TextView
+
+                                        android:layout_width="20dp"
+                                        android:layout_height="20dp"
+                                        android:layout_gravity="center"
+                                        android:layout_marginLeft="5dp"
+                                        android:text="4" />
+
+                                </androidx.appcompat.widget.LinearLayoutCompat>
+
+                            </androidx.cardview.widget.CardView>
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Chunky Pandey"
+                                android:textColor="@color/black"
+                                android:textSize="15dp"
+                                android:layout_margin="12dp"/>
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="bought a month ago"
+                                android:textSize="12dp"
+                                android:layout_margin="12dp"/>
+
+
+
+                        </androidx.appcompat.widget.LinearLayoutCompat>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Nice and genuine product. Loved it!"
+                            android:layout_margin="10dp"/>
+
+                    </androidx.appcompat.widget.LinearLayoutCompat>
+
+                </androidx.cardview.widget.CardView>
+
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginHorizontal="15dp">
+
+                    <androidx.appcompat.widget.LinearLayoutCompat
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <androidx.appcompat.widget.LinearLayoutCompat
+                            android:layout_width="match_parent"
+                            android:orientation="horizontal"
+                            android:layout_margin="5dp"
+                            android:layout_height="wrap_content">
+                            <androidx.cardview.widget.CardView
+                                android:layout_width="60dp"
+                                android:layout_height="35dp"
+                                android:layout_marginVertical="5dp"
+                                android:layout_marginLeft="12dp"
+                                android:layout_marginTop="5dp"
+                                app:cardCornerRadius="10dp"
+                                >
+
+                                <androidx.appcompat.widget.LinearLayoutCompat
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:orientation="horizontal">
+
+                                    <androidx.appcompat.widget.AppCompatImageView
+                                        android:layout_width="20dp"
+                                        android:layout_height="20dp"
+                                        android:layout_gravity="center"
+                                        android:layout_marginLeft="5dp"
+
+                                        android:src="@drawable/star" />
+
+                                    <TextView
+
+                                        android:layout_width="20dp"
+                                        android:layout_height="20dp"
+                                        android:layout_gravity="center"
+                                        android:layout_marginLeft="5dp"
+                                        android:text="5" />
+
+                                </androidx.appcompat.widget.LinearLayoutCompat>
+
+                            </androidx.cardview.widget.CardView>
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Saif Ali Khan"
+                                android:textColor="@color/black"
+                                android:textSize="15dp"
+                                android:layout_margin="12dp"/>
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="bought 2 months ago"
+                                android:textSize="12dp"
+                                android:layout_margin="12dp"/>
+
+
+
+                        </androidx.appcompat.widget.LinearLayoutCompat>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Good Quality, worth the investment."
+                            android:layout_margin="10dp"/>
+
+                    </androidx.appcompat.widget.LinearLayoutCompat>
+
+
+
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginHorizontal="15dp">
+
+                    <androidx.appcompat.widget.LinearLayoutCompat
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <androidx.appcompat.widget.LinearLayoutCompat
+                            android:layout_width="match_parent"
+                            android:orientation="horizontal"
+                            android:layout_margin="5dp"
+                            android:layout_height="wrap_content">
+                            <androidx.cardview.widget.CardView
+                                android:layout_width="60dp"
+                                android:layout_height="35dp"
+                                android:layout_marginVertical="5dp"
+                                android:layout_marginLeft="12dp"
+                                android:layout_marginTop="5dp"
+                                app:cardCornerRadius="10dp"
+                                >
+
+                                <androidx.appcompat.widget.LinearLayoutCompat
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:orientation="horizontal">
+
+                                    <androidx.appcompat.widget.AppCompatImageView
+                                        android:layout_width="20dp"
+                                        android:layout_height="20dp"
+                                        android:layout_gravity="center"
+                                        android:layout_marginLeft="5dp"
+
+                                        android:src="@drawable/star" />
+
+                                    <TextView
+
+                                        android:layout_width="20dp"
+                                        android:layout_height="20dp"
+                                        android:layout_gravity="center"
+                                        android:layout_marginLeft="5dp"
+                                        android:text="4" />
+
+                                </androidx.appcompat.widget.LinearLayoutCompat>
+
+                            </androidx.cardview.widget.CardView>
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Amit Shah"
+                                android:textColor="@color/black"
+                                android:textSize="15dp"
+                                android:layout_margin="12dp"/>
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="bought 5 months ago"
+                                android:textSize="12dp"
+                                android:layout_margin="12dp"/>
+
+
+
+                        </androidx.appcompat.widget.LinearLayoutCompat>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Great handiwork."
+                            android:layout_margin="10dp"/>
+
+                    </androidx.appcompat.widget.LinearLayoutCompat>
+
+                </androidx.cardview.widget.CardView>
+
+
+
+
+            </androidx.appcompat.widget.LinearLayoutCompat>
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:src="@drawable/showmore"
+                android:layout_gravity="bottom"/>
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_marginTop="15dp"
+            android:layout_height="320dp"
+            app:cardElevation="15dp">
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="View Similar"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginLeft="15dp"
+                    android:textStyle="bold"
+                    android:textColor="@color/lightorange"
+                    android:textSize="18dp"/>
+
+                <HorizontalScrollView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:scrollbars="none"
+                    >
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginTop="10dp"
+                        android:orientation="horizontal">
+
+                        <androidx.cardview.widget.CardView
+                            android:layout_width="130dp"
+                            android:layout_height="200dp"
+                            android:layout_margin="15dp"
+                            app:cardCornerRadius="10dp"
+                            app:cardElevation="10dp">
+
+                            <androidx.appcompat.widget.LinearLayoutCompat
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:orientation="vertical">
+
+                                <androidx.cardview.widget.CardView
+                                    android:layout_width="wrap_content"
+                                    android:layout_gravity="center"
+                                    android:layout_height="wrap_content"
+                                    app:cardCornerRadius="15dp"
+                                    android:layout_marginHorizontal="10dp"
+                                    android:layout_marginTop="10dp">
+
+                                    <ImageView
+                                        android:layout_width="100dp"
+                                        android:layout_height="100dp"
+                                        android:src="@drawable/img_1"/>
+
+
+                                </androidx.cardview.widget.CardView>
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_margin="5dp"
+                                    android:textSize="15dp"
+                                    android:maxLines="2"
+                                    android:text="Handcrafted Red Ceramic (Set of... "
+                                    android:ellipsize="end"/>
+
+                                <androidx.appcompat.widget.LinearLayoutCompat
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginHorizontal="15dp"
+                                    android:layout_marginTop="10dp"
+                                    android:orientation="horizontal">
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:gravity="bottom"
+                                        android:text="MRP"
+                                        android:textStyle="bold"
+                                        android:textSize="10dp"
+
+                                        />
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:gravity="bottom"
+                                        android:text=" ₹499"
+                                        android:textSize="10dp"
+
+                                        />
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:gravity="bottom"
+                                        android:text=" ₹375"
+                                        android:textSize="15dp"
+
+                                        />
+
+
+
+
+
+                                </androidx.appcompat.widget.LinearLayoutCompat>
+
+
+
+                            </androidx.appcompat.widget.LinearLayoutCompat>
+
+
+                        </androidx.cardview.widget.CardView>
+                        <androidx.cardview.widget.CardView
+                            android:layout_width="130dp"
+                            android:layout_height="200dp"
+                            android:layout_margin="15dp"
+                            app:cardCornerRadius="10dp"
+                            app:cardElevation="10dp">
+
+                            <androidx.appcompat.widget.LinearLayoutCompat
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:orientation="vertical">
+
+                                <androidx.cardview.widget.CardView
+                                    android:layout_width="wrap_content"
+                                    android:layout_gravity="center"
+                                    android:layout_height="wrap_content"
+                                    app:cardCornerRadius="15dp"
+                                    android:layout_marginHorizontal="10dp"
+                                    android:layout_marginTop="10dp">
+
+                                    <ImageView
+                                        android:layout_width="100dp"
+                                        android:layout_height="100dp"
+                                        android:src="@drawable/img_2"/>
+
+
+                                </androidx.cardview.widget.CardView>
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_margin="5dp"
+                                    android:textSize="15dp"
+                                    android:maxLines="2"
+                                    android:text="Ceramic Tea
+Kettle Set..."
+                                    android:ellipsize="end"/>
+
+                                <androidx.appcompat.widget.LinearLayoutCompat
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginHorizontal="15dp"
+                                    android:layout_marginTop="10dp"
+                                    android:orientation="horizontal">
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:gravity="bottom"
+                                        android:text="MRP"
+                                        android:textStyle="bold"
+                                        android:textSize="10dp"
+
+                                        />
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:gravity="bottom"
+                                        android:text=" ₹499"
+                                        android:textSize="10dp"
+
+                                        />
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:gravity="bottom"
+                                        android:text=" ₹375"
+                                        android:textSize="15dp"
+
+                                        />
+
+
+
+
+
+                                </androidx.appcompat.widget.LinearLayoutCompat>
+
+
+
+                            </androidx.appcompat.widget.LinearLayoutCompat>
+
+
+                        </androidx.cardview.widget.CardView>
+                        <androidx.cardview.widget.CardView
+                            android:layout_width="130dp"
+                            android:layout_height="200dp"
+                            android:layout_margin="15dp"
+                            app:cardCornerRadius="10dp"
+                            app:cardElevation="10dp">
+
+                            <androidx.appcompat.widget.LinearLayoutCompat
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:orientation="vertical">
+
+                                <androidx.cardview.widget.CardView
+                                    android:layout_width="wrap_content"
+                                    android:layout_gravity="center"
+                                    android:layout_height="wrap_content"
+                                    app:cardCornerRadius="15dp"
+                                    android:layout_marginHorizontal="10dp"
+                                    android:layout_marginTop="10dp">
+
+                                    <ImageView
+                                        android:layout_width="100dp"
+                                        android:layout_height="100dp"
+                                        android:src="@drawable/img_1"/>
+
+
+                                </androidx.cardview.widget.CardView>
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_margin="5dp"
+                                    android:textSize="15dp"
+                                    android:maxLines="2"
+                                    android:text="Handcrafted Red Ceramic (Set of... "
+                                    android:ellipsize="end"/>
+
+                                <androidx.appcompat.widget.LinearLayoutCompat
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginHorizontal="15dp"
+                                    android:layout_marginTop="10dp"
+                                    android:orientation="horizontal">
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:gravity="bottom"
+                                        android:text="MRP"
+                                        android:textStyle="bold"
+                                        android:textSize="10dp"
+
+                                        />
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:gravity="bottom"
+                                        android:text=" ₹499"
+                                        android:textSize="10dp"
+
+                                        />
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:gravity="bottom"
+                                        android:text=" ₹375"
+                                        android:textSize="15dp"
+
+                                        />
+
+
+
+
+
+                                </androidx.appcompat.widget.LinearLayoutCompat>
+
+
+
+                            </androidx.appcompat.widget.LinearLayoutCompat>
+
+
+                        </androidx.cardview.widget.CardView>
+                        <androidx.cardview.widget.CardView
+                            android:layout_width="130dp"
+                            android:layout_height="200dp"
+                            android:layout_margin="15dp"
+                            app:cardCornerRadius="10dp"
+                            app:cardElevation="10dp">
+
+                            <androidx.appcompat.widget.LinearLayoutCompat
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:orientation="vertical">
+
+                                <androidx.cardview.widget.CardView
+                                    android:layout_width="wrap_content"
+                                    android:layout_gravity="center"
+                                    android:layout_height="wrap_content"
+                                    app:cardCornerRadius="15dp"
+                                    android:layout_marginHorizontal="10dp"
+                                    android:layout_marginTop="10dp">
+
+                                    <ImageView
+                                        android:layout_width="100dp"
+                                        android:layout_height="100dp"
+                                        android:src="@drawable/img_1"/>
+
+
+                                </androidx.cardview.widget.CardView>
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_margin="5dp"
+                                    android:textSize="15dp"
+                                    android:maxLines="2"
+                                    android:text="Handcrafted Red Ceramic (Set of... "
+                                    android:ellipsize="end"/>
+
+                                <androidx.appcompat.widget.LinearLayoutCompat
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginHorizontal="15dp"
+                                    android:layout_marginTop="10dp"
+                                    android:orientation="horizontal">
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:gravity="bottom"
+                                        android:text="MRP"
+                                        android:textStyle="bold"
+                                        android:textSize="10dp"
+
+                                        />
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:gravity="bottom"
+                                        android:text=" ₹499"
+                                        android:textSize="10dp"
+
+                                        />
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:gravity="bottom"
+                                        android:text=" ₹375"
+                                        android:textSize="15dp"
+
+                                        />
+
+
+
+
+
+                                </androidx.appcompat.widget.LinearLayoutCompat>
+
+
+
+                            </androidx.appcompat.widget.LinearLayoutCompat>
+
+
+                        </androidx.cardview.widget.CardView>
+
+
+
+                    </LinearLayout>
+
+
+
+
+                </HorizontalScrollView>
+
+
+
+            </androidx.appcompat.widget.LinearLayoutCompat>
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:src="@drawable/showmore"
+                android:layout_gravity="bottom"/>
+
+        </androidx.cardview.widget.CardView>
+
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            app:cardElevation="15dp"
+            android:layout_marginTop="15dp"
+            android:layout_height="100dp">
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                >
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="15dp"
+                    android:text="More Information"
+                    android:textColor="@color/lightorange"
+                    android:textStyle="bold"
+                    android:layout_margin="15dp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Product code : 1892812"
+                    android:layout_marginLeft="15dp"
+                    />
+
+            </androidx.appcompat.widget.LinearLayoutCompat>
+        </androidx.cardview.widget.CardView>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ending"
+            android:layout_marginHorizontal="10dp"/>
+
+    </LinearLayout>
+
+
+
+
+
+
+
+</ScrollView>
+
+
+
+

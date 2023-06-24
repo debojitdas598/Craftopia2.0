@@ -1,14 +1,128 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".ui.NotificationFragment">
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".ui.NotificationFragment"
+    android:orientation="vertical">
 
     <!-- TODO: Update blank fragment layout -->
-    <TextView
+    <androidx.cardview.widget.CardView
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="@string/hello_blank_fragment" />
+        android:layout_height="wrap_content"
+        app:cardBackgroundColor="#F18565"
+        android:layout_margin="10dp"
+        app:cardCornerRadius="10dp"
+        app:cardElevation="10dp">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Manage your notifications"
+            android:textStyle="bold"
+            android:textColor="@color/white"
+            android:textSize="18dp"
+            android:textAlignment="center"
+            android:layout_margin="10dp"/>
 
-</FrameLayout>
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        app:cardCornerRadius="10dp"
+        app:cardElevation="10dp">
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Exclusive Discount Alert!"
+                android:textAlignment="center"
+                android:textSize="20dp"
+
+                android:layout_margin="10dp"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Don't miss out on our exclusive discount! Use code SHOPNOW to get 20% off your next purchase. Happy shopping!"
+
+                android:textSize="19dp"
+
+                android:layout_margin="10dp"/>
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+
+
+    </androidx.cardview.widget.CardView>
+<androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        app:cardCornerRadius="10dp"
+        app:cardElevation="10dp">
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="New Product Alert!"
+                android:textAlignment="center"
+                android:textSize="20dp"
+
+                android:layout_margin="10dp"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Discover our latest arrival! We just released an exciting new product that you won't want to miss. Check it out now!"
+
+                android:textSize="19dp"
+
+                android:layout_margin="10dp"/>
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+
+
+    </androidx.cardview.widget.CardView>
+<androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        app:cardCornerRadius="10dp"
+        app:cardElevation="10dp">
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Need Help? We're Here for You!"
+                android:textAlignment="center"
+                android:textSize="20dp"
+
+                android:layout_margin="10dp"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Having trouble with your order or need assistance? Our customer support team is available 24/7 to help. Contact us anytime."
+
+                android:textSize="19dp"
+
+                android:layout_margin="10dp"/>
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+
+
+    </androidx.cardview.widget.CardView>
+
+</androidx.appcompat.widget.LinearLayoutCompat>

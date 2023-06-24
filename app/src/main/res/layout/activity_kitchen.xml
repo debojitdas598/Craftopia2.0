@@ -1,0 +1,982 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".categories.kitchen">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="110dp"
+        android:src="@drawable/kitchenitemsbanner_1"/>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <androidx.cardview.widget.CardView
+                android:layout_margin="10dp"
+                android:id="@+id/cardone"
+                app:cardCornerRadius="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="150dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal"
+                    >
+                    <ImageView
+                        android:layout_width="100dp"
+                        android:layout_height="match_parent"
+                        android:layout_margin="13dp"
+                        android:id="@+id/imageview1"
+                        android:layout_weight="1"
+                        android:src="@drawable/s8"/>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="8"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textStyle="bold"
+                            android:textColor="#FF5C00"
+                            android:text="Seller name"
+                            android:id="@+id/sellername1"
+                            android:textSize="17dp"
+                            android:layout_marginLeft="5dp"
+                            android:layout_marginTop="15dp"/>
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/productname1"
+                            android:text="Diary key chain set of 12 pc Key Chain (Multicolor)"
+                            android:textSize="17dp"
+                            android:layout_marginLeft="5dp"
+                            />
+
+                        <androidx.appcompat.widget.LinearLayoutCompat
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginHorizontal="5dp"
+                            android:layout_marginTop="10dp"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:gravity="bottom"
+                                android:text="MRP"
+                                android:textStyle="bold"
+                                android:textSize="15dp"
+
+                                />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:gravity="bottom"
+                                android:id="@+id/costprice1"
+                                android:text=" ₹499"
+                                android:textSize="15dp"
+
+                                />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:gravity="bottom"
+                                android:text=" ₹375"
+                                android:id="@+id/sellingprice1"
+                                android:textSize="20dp"
+
+                                />
+
+
+
+
+
+                        </androidx.appcompat.widget.LinearLayoutCompat>
+
+
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+            <androidx.cardview.widget.CardView
+                android:layout_margin="10dp"
+                android:id="@+id/cardtwo"
+                app:cardCornerRadius="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="150dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal"
+                    >
+                    <ImageView
+                        android:layout_width="100dp"
+                        android:layout_height="match_parent"
+                        android:layout_margin="13dp"
+                        android:id="@+id/imageview2"
+                        android:layout_weight="1"
+                        android:src="@drawable/s8"/>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="8"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Seller name"
+                            android:textStyle="bold"
+                            android:textColor="#FF5C00"
+                            android:id="@+id/sellername2"
+                            android:textSize="17dp"
+                            android:layout_marginLeft="5dp"
+                            android:layout_marginTop="15dp"/>
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/productname2"
+                            android:text="Diary key chain set of 12 pc Key Chain (Multicolor)"
+                            android:textSize="17dp"
+                            android:layout_marginLeft="5dp"
+                            />
+
+                        <androidx.appcompat.widget.LinearLayoutCompat
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginHorizontal="5dp"
+                            android:layout_marginTop="10dp"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:gravity="bottom"
+                                android:text="MRP"
+                                android:textStyle="bold"
+                                android:textSize="15dp"
+
+                                />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:gravity="bottom"
+                                android:id="@+id/costprice2"
+                                android:text=" ₹499"
+                                android:textSize="15dp"
+
+                                />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:gravity="bottom"
+                                android:text=" ₹375"
+                                android:id="@+id/sellingprice2"
+                                android:textSize="20dp"
+
+                                />
+
+
+
+
+
+                        </androidx.appcompat.widget.LinearLayoutCompat>
+
+
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+            <androidx.cardview.widget.CardView
+                android:layout_margin="10dp"
+                android:id="@+id/cardthree"
+                app:cardCornerRadius="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="150dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal"
+                    >
+                    <ImageView
+                        android:layout_width="100dp"
+                        android:layout_height="match_parent"
+                        android:layout_margin="13dp"
+                        android:id="@+id/imageview3"
+                        android:layout_weight="1"
+                        android:src="@drawable/s8"/>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="8"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Seller name"
+                            android:textStyle="bold"
+                            android:textColor="#FF5C00"
+                            android:id="@+id/sellername3"
+                            android:textSize="17dp"
+                            android:layout_marginLeft="5dp"
+                            android:layout_marginTop="15dp"/>
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/productname3"
+                            android:text="Diary key chain set of 12 pc Key Chain (Multicolor)"
+                            android:textSize="17dp"
+                            android:layout_marginLeft="5dp"
+                            />
+
+                        <androidx.appcompat.widget.LinearLayoutCompat
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginHorizontal="5dp"
+                            android:layout_marginTop="10dp"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:gravity="bottom"
+                                android:text="MRP"
+                                android:textStyle="bold"
+                                android:textSize="15dp"
+
+                                />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:gravity="bottom"
+                                android:id="@+id/costprice3"
+                                android:text=" ₹499"
+                                android:textSize="15dp"
+
+                                />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:gravity="bottom"
+                                android:text=" ₹375"
+                                android:id="@+id/sellingprice3"
+                                android:textSize="20dp"
+
+                                />
+
+
+
+
+
+                        </androidx.appcompat.widget.LinearLayoutCompat>
+
+
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+            <androidx.cardview.widget.CardView
+                android:layout_margin="10dp"
+                android:id="@+id/cardfour"
+                app:cardCornerRadius="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="150dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal"
+                    >
+                    <ImageView
+                        android:layout_width="100dp"
+                        android:layout_height="match_parent"
+                        android:layout_margin="13dp"
+                        android:id="@+id/imageview4"
+                        android:layout_weight="1"
+                        android:src="@drawable/s8"/>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="8"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Seller name"
+                            android:textStyle="bold"
+                            android:textColor="#FF5C00"
+                            android:id="@+id/sellername4"
+                            android:textSize="17dp"
+                            android:layout_marginLeft="5dp"
+                            android:layout_marginTop="15dp"/>
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/productname4"
+                            android:text="Diary key chain set of 12 pc Key Chain (Multicolor)"
+                            android:textSize="17dp"
+                            android:layout_marginLeft="5dp"
+                            />
+
+                        <androidx.appcompat.widget.LinearLayoutCompat
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginHorizontal="5dp"
+                            android:layout_marginTop="10dp"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:gravity="bottom"
+                                android:text="MRP"
+                                android:textStyle="bold"
+                                android:textSize="15dp"
+
+                                />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:gravity="bottom"
+                                android:id="@+id/costprice4"
+                                android:text=" ₹499"
+                                android:textSize="15dp"
+
+                                />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:gravity="bottom"
+                                android:text=" ₹375"
+                                android:id="@+id/sellingprice4"
+                                android:textSize="20dp"
+
+                                />
+
+
+
+
+
+                        </androidx.appcompat.widget.LinearLayoutCompat>
+
+
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+            <androidx.cardview.widget.CardView
+                android:layout_margin="10dp"
+                android:id="@+id/cardfive"
+                app:cardCornerRadius="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="150dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal"
+                    >
+                    <ImageView
+                        android:layout_width="100dp"
+                        android:layout_height="match_parent"
+                        android:layout_margin="13dp"
+                        android:id="@+id/imageview5"
+                        android:layout_weight="1"
+                        android:src="@drawable/s8"/>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="8"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Seller name"
+                            android:id="@+id/sellername5"
+                            android:textStyle="bold"
+                            android:textColor="#FF5C00"
+                            android:textSize="17dp"
+                            android:layout_marginLeft="5dp"
+                            android:layout_marginTop="15dp"/>
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/productname5"
+                            android:text="Diary key chain set of 12 pc Key Chain (Multicolor)"
+                            android:textSize="17dp"
+                            android:layout_marginLeft="5dp"
+                            />
+
+                        <androidx.appcompat.widget.LinearLayoutCompat
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginHorizontal="5dp"
+                            android:layout_marginTop="10dp"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:gravity="bottom"
+                                android:text="MRP"
+                                android:textStyle="bold"
+                                android:textSize="15dp"
+
+                                />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:gravity="bottom"
+                                android:id="@+id/costprice5"
+                                android:text=" ₹499"
+                                android:textSize="15dp"
+
+                                />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:gravity="bottom"
+                                android:text=" ₹375"
+                                android:id="@+id/sellingprice5"
+                                android:textSize="20dp"
+
+                                />
+
+
+
+
+
+                        </androidx.appcompat.widget.LinearLayoutCompat>
+
+
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+            <androidx.cardview.widget.CardView
+                android:layout_margin="10dp"
+                android:id="@+id/cardsix"
+                app:cardCornerRadius="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="150dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal"
+                    >
+                    <ImageView
+                        android:layout_width="100dp"
+                        android:layout_height="match_parent"
+                        android:layout_margin="13dp"
+                        android:id="@+id/imageview6"
+                        android:layout_weight="1"
+                        android:src="@drawable/s8"/>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="8"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Seller name"
+                            android:textStyle="bold"
+                            android:textColor="#FF5C00"
+                            android:id="@+id/sellername6"
+                            android:textSize="17dp"
+                            android:layout_marginLeft="5dp"
+                            android:layout_marginTop="15dp"/>
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/productname6"
+                            android:text="Diary key chain set of 12 pc Key Chain (Multicolor)"
+                            android:textSize="17dp"
+                            android:layout_marginLeft="5dp"
+                            />
+
+                        <androidx.appcompat.widget.LinearLayoutCompat
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginHorizontal="5dp"
+                            android:layout_marginTop="10dp"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:gravity="bottom"
+                                android:text="MRP"
+                                android:textStyle="bold"
+                                android:textSize="15dp"
+
+                                />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:gravity="bottom"
+                                android:id="@+id/costprice6"
+                                android:text=" ₹499"
+                                android:textSize="15dp"
+
+                                />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:gravity="bottom"
+                                android:text=" ₹375"
+                                android:id="@+id/sellingprice6"
+                                android:textSize="20dp"
+
+                                />
+
+
+
+
+
+                        </androidx.appcompat.widget.LinearLayoutCompat>
+
+
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+            <androidx.cardview.widget.CardView
+                android:layout_margin="10dp"
+                android:id="@+id/cardseven"
+                app:cardCornerRadius="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="150dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal"
+                    >
+                    <ImageView
+                        android:layout_width="100dp"
+                        android:layout_height="match_parent"
+                        android:layout_margin="13dp"
+                        android:id="@+id/imageview7"
+                        android:layout_weight="1"
+                        android:src="@drawable/s8"/>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="8"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Seller name"
+                            android:id="@+id/sellername7"
+                            android:textSize="17dp"
+                            android:textStyle="bold"
+                            android:textColor="#FF5C00"
+                            android:layout_marginLeft="5dp"
+                            android:layout_marginTop="15dp"/>
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/productname7"
+                            android:text="Diary key chain set of 12 pc Key Chain (Multicolor)"
+                            android:textSize="17dp"
+                            android:layout_marginLeft="5dp"
+                            />
+
+                        <androidx.appcompat.widget.LinearLayoutCompat
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginHorizontal="5dp"
+                            android:layout_marginTop="10dp"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:gravity="bottom"
+                                android:text="MRP"
+                                android:textStyle="bold"
+                                android:textSize="15dp"
+
+                                />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:gravity="bottom"
+                                android:id="@+id/costprice7"
+                                android:text=" ₹499"
+                                android:textSize="15dp"
+
+                                />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:gravity="bottom"
+                                android:text=" ₹375"
+                                android:id="@+id/sellingprice7"
+                                android:textSize="20dp"
+
+                                />
+
+
+
+
+
+                        </androidx.appcompat.widget.LinearLayoutCompat>
+
+
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+            <androidx.cardview.widget.CardView
+                android:layout_margin="10dp"
+                android:id="@+id/cardeight"
+                app:cardCornerRadius="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="150dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal"
+                    >
+                    <ImageView
+                        android:layout_width="100dp"
+                        android:layout_height="match_parent"
+                        android:layout_margin="13dp"
+                        android:id="@+id/imageview8"
+                        android:layout_weight="1"
+                        android:src="@drawable/s8"/>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="8"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Seller name"
+                            android:textStyle="bold"
+                            android:textColor="#FF5C00"
+
+                            android:id="@+id/sellername8"
+                            android:textSize="17dp"
+                            android:layout_marginLeft="5dp"
+                            android:layout_marginTop="15dp"/>
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/productname8"
+                            android:text="Diary key chain set of 12 pc Key Chain (Multicolor)"
+                            android:textSize="17dp"
+                            android:layout_marginLeft="5dp"
+                            />
+
+                        <androidx.appcompat.widget.LinearLayoutCompat
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginHorizontal="5dp"
+                            android:layout_marginTop="10dp"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:gravity="bottom"
+                                android:text="MRP"
+                                android:textStyle="bold"
+                                android:textSize="15dp"
+
+                                />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:gravity="bottom"
+                                android:id="@+id/costprice8"
+                                android:text=" ₹499"
+                                android:textSize="15dp"
+
+                                />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:gravity="bottom"
+                                android:text=" ₹375"
+                                android:id="@+id/sellingprice8"
+                                android:textSize="20dp"
+
+                                />
+
+
+
+
+
+                        </androidx.appcompat.widget.LinearLayoutCompat>
+
+
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+            <androidx.cardview.widget.CardView
+                android:layout_margin="10dp"
+                android:id="@+id/cardnine"
+                app:cardCornerRadius="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="150dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal"
+                    >
+                    <ImageView
+                        android:layout_width="100dp"
+                        android:layout_height="match_parent"
+                        android:layout_margin="13dp"
+                        android:id="@+id/imageview9"
+                        android:layout_weight="1"
+                        android:src="@drawable/s8"/>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="8"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Seller name"
+                            android:id="@+id/sellername9"
+                            android:textStyle="bold"
+                            android:textColor="#FF5C00"
+                            android:textSize="17dp"
+                            android:layout_marginLeft="5dp"
+                            android:layout_marginTop="15dp"/>
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/productname9"
+                            android:text="Diary key chain set of 12 pc Key Chain (Multicolor)"
+                            android:textSize="17dp"
+                            android:layout_marginLeft="5dp"
+                            />
+
+                        <androidx.appcompat.widget.LinearLayoutCompat
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginHorizontal="5dp"
+                            android:layout_marginTop="10dp"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:gravity="bottom"
+                                android:text="MRP"
+                                android:textStyle="bold"
+                                android:textSize="15dp"
+
+                                />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:gravity="bottom"
+                                android:id="@+id/costprice9"
+                                android:text=" ₹499"
+                                android:textSize="15dp"
+
+                                />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:gravity="bottom"
+                                android:text=" ₹375"
+                                android:id="@+id/sellingprice9"
+                                android:textSize="20dp"
+
+                                />
+
+
+
+
+
+                        </androidx.appcompat.widget.LinearLayoutCompat>
+
+
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+            <androidx.cardview.widget.CardView
+                android:layout_margin="10dp"
+                android:id="@+id/cardten"
+                app:cardCornerRadius="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="150dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal"
+                    >
+                    <ImageView
+                        android:layout_width="100dp"
+                        android:layout_height="match_parent"
+                        android:layout_margin="13dp"
+                        android:id="@+id/imageview10"
+                        android:layout_weight="1"
+                        android:src="@drawable/s8"/>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="8"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Seller name"
+                            android:id="@+id/sellername10"
+                            android:textStyle="bold"
+                            android:textColor="#FF5C00"
+                            android:textSize="17dp"
+                            android:layout_marginLeft="5dp"
+                            android:layout_marginTop="15dp"/>
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/productname10"
+                            android:text="Diary key chain set of 12 pc Key Chain (Multicolor)"
+                            android:textSize="17dp"
+                            android:layout_marginLeft="5dp"
+                            />
+
+                        <androidx.appcompat.widget.LinearLayoutCompat
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginHorizontal="5dp"
+                            android:layout_marginTop="10dp"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:gravity="bottom"
+                                android:text="MRP"
+                                android:textStyle="bold"
+                                android:textSize="15dp"
+
+                                />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:gravity="bottom"
+                                android:id="@+id/costprice10"
+                                android:text=" ₹499"
+                                android:textSize="15dp"
+
+                                />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:gravity="bottom"
+                                android:text=" ₹375"
+                                android:id="@+id/sellingprice10"
+                                android:textSize="20dp"
+
+                                />
+
+
+
+
+
+                        </androidx.appcompat.widget.LinearLayoutCompat>
+
+
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+        </LinearLayout>
+
+    </ScrollView>
+
+
+
+
+
+</androidx.appcompat.widget.LinearLayoutCompat>

@@ -1,8 +1,10 @@
 package com.example.craftopia
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.MenuItem
+import android.view.Window
 import android.widget.Toast
 import androidx.appcompat.app.ActionBarDrawerToggle
 import androidx.core.view.GravityCompat
@@ -10,6 +12,7 @@ import androidx.navigation.findNavController
 import androidx.navigation.ui.NavigationUI
 import com.example.craftopia.databinding.ActivityLoginBinding
 import com.example.craftopia.databinding.ActivityMainBinding
+import com.google.android.material.internal.NavigationMenuItemView
 import com.google.android.material.navigation.NavigationView
 
 class MainActivity : AppCompatActivity() , NavigationView.OnNavigationItemSelectedListener {
@@ -18,10 +21,12 @@ class MainActivity : AppCompatActivity() , NavigationView.OnNavigationItemSelect
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
 
+
+
         binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
-       setSupportActionBar(binding.toolbar)
+
         supportActionBar?.title = "MainActivity"
 
         val drawerLayout = binding.drawerLayout
@@ -53,7 +58,12 @@ class MainActivity : AppCompatActivity() , NavigationView.OnNavigationItemSelect
                 Toast.makeText(this,"Become a seller", Toast.LENGTH_SHORT).show()
             }
             R.id.setting ->  {
-                Toast.makeText(this,"Settings", Toast.LENGTH_SHORT).show()
+//                Toast.makeText(this,"Settings", Toast.LENGTH_SHORT).show()
+                val settings = findViewById<NavigationMenuItemView>(R.id.setting)
+                settings.setOnClickListener{
+                    val intent = Intent(this , Settings::class.java)
+                    startActivity(intent)
+                }
             }
         }
         return true

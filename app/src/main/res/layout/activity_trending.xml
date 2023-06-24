@@ -1,0 +1,345 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".categories.Trending">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="110dp"
+        android:src="@drawable/trandingbanner"/>
+
+    <androidx.cardview.widget.CardView
+        android:layout_margin="10dp"
+        android:id="@+id/cardone"
+        app:cardCornerRadius="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="120dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            >
+            <ImageView
+                android:layout_width="100dp"
+                android:layout_height="match_parent"
+                android:layout_margin="13dp"
+
+                android:layout_weight="1"
+                android:src="@drawable/s8"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="8"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Diary key chain set of 12 pc Key Chain (Multicolor)"
+                    android:textSize="17dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="15dp"/>
+
+                <androidx.appcompat.widget.LinearLayoutCompat
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="5dp"
+                    android:layout_marginTop="10dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="bottom"
+                        android:text="MRP"
+                        android:textStyle="bold"
+                        android:textSize="15dp"
+
+                        />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="bottom"
+                        android:text=" ₹499"
+                        android:textSize="15dp"
+
+                        />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="bottom"
+                        android:text=" ₹375"
+                        android:textSize="20dp"
+
+                        />
+
+
+
+
+
+                </androidx.appcompat.widget.LinearLayoutCompat>
+
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+    <androidx.cardview.widget.CardView
+        android:layout_margin="10dp"
+        android:id="@+id/cardtwo"
+        app:cardCornerRadius="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="120dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            >
+            <ImageView
+                android:layout_width="100dp"
+                android:layout_height="match_parent"
+                android:layout_margin="13dp"
+                android:layout_weight="1"
+                android:src="@drawable/dn9"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="8"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Woven Square Bamboo Planter"
+                    android:textSize="17dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="15dp"/>
+
+                <androidx.appcompat.widget.LinearLayoutCompat
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="5dp"
+                    android:layout_marginTop="20dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="bottom"
+                        android:text="MRP"
+                        android:textStyle="bold"
+                        android:textSize="15dp"
+
+                        />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="bottom"
+                        android:text=" ₹13999"
+                        android:textSize="15dp"
+
+                        />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="bottom"
+                        android:text=" ₹11899"
+                        android:textSize="20dp"
+
+                        />
+
+
+
+
+
+                </androidx.appcompat.widget.LinearLayoutCompat>
+
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:layout_margin="10dp"
+        android:id="@+id/cardthree"
+        app:cardCornerRadius="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="120dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            >
+            <ImageView
+                android:layout_width="100dp"
+                android:layout_height="match_parent"
+                android:layout_margin="13dp"
+
+                android:layout_weight="1"
+                android:src="@drawable/fa4"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="8"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Pink gold green big border cotton handwoven mangalagiri saree"
+                    android:textSize="17dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="15dp"/>
+
+                <androidx.appcompat.widget.LinearLayoutCompat
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="5dp"
+                    android:layout_marginTop="10dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="bottom"
+                        android:text="MRP"
+                        android:textStyle="bold"
+                        android:textSize="15dp"
+
+                        />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="bottom"
+                        android:text=" ₹5999"
+                        android:textSize="15dp"
+
+                        />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="bottom"
+                        android:text=" ₹4699"
+                        android:textSize="20dp"
+
+                        />
+
+
+
+
+
+                </androidx.appcompat.widget.LinearLayoutCompat>
+
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+    <androidx.cardview.widget.CardView
+        android:layout_margin="10dp"
+        android:id="@+id/cardfour"
+        app:cardCornerRadius="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="120dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            >
+            <ImageView
+                android:layout_width="100dp"
+                android:layout_height="match_parent"
+                android:layout_margin="13dp"
+
+                android:layout_weight="1"
+                android:src="@drawable/f3"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="8"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Teak Wood Mirror Full Size In Walnut Finish"
+                    android:textSize="17dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="15dp"/>
+
+                <androidx.appcompat.widget.LinearLayoutCompat
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="5dp"
+                    android:layout_marginTop="10dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="bottom"
+                        android:text="MRP"
+                        android:textStyle="bold"
+                        android:textSize="15dp"
+
+                        />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="bottom"
+                        android:text=" ₹599"
+                        android:textSize="15dp"
+
+                        />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="bottom"
+                        android:text=" ₹499"
+                        android:textSize="20dp"
+
+                        />
+
+
+
+
+
+                </androidx.appcompat.widget.LinearLayoutCompat>
+
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+
+</androidx.appcompat.widget.LinearLayoutCompat>

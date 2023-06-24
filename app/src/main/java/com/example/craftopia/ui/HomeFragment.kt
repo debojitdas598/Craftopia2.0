@@ -1,11 +1,15 @@
 package com.example.craftopia.ui
 
+import android.content.Intent
 import android.os.Bundle
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.ImageView
 import com.example.craftopia.R
+import com.example.craftopia.categories.Trending
+import com.example.craftopia.categories.kitchen
 
 // TODO: Rename parameter arguments, choose names that match
 // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
@@ -34,8 +38,62 @@ class HomeFragment : Fragment() {
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
+        val view = inflater.inflate(R.layout.fragment_home, container, false)
+        val kitchenbutton = view.findViewById(R.id.kitchen) as ImageView
+        val homedecorbutton = view.findViewById(R.id.homedecor) as ImageView
+        val furniturebutton = view.findViewById(R.id.furniture) as ImageView
+        val fashionbutton = view.findViewById(R.id.fashion) as ImageView
+        val freelancebutton = view.findViewById(R.id.freelance) as ImageView
+        val dailyneedsbutton = view.findViewById(R.id.dailyneeds) as ImageView
+        val stationerybutton = view.findViewById(R.id.stationery) as ImageView
+        val toysandgames = view.findViewById(R.id.toyandgames) as ImageView
+        val trendingbutton = view.findViewById(R.id.trending) as ImageView
+
+        kitchenbutton.setOnClickListener {
+            val intent = Intent(activity, kitchen::class.java)
+            intent.putExtra("key", "kitchen")
+            startActivity(intent)
+
+        }
+        homedecorbutton.setOnClickListener {
+            val intent = Intent(activity, kitchen::class.java)
+            intent.putExtra("key", "homedecor")
+            startActivity(intent)
+        }
+         furniturebutton.setOnClickListener {
+            val intent = Intent(activity, kitchen::class.java)
+            intent.putExtra("key", "furniture")
+            startActivity(intent)
+        }
+         fashionbutton.setOnClickListener {
+            val intent = Intent(activity, kitchen::class.java)
+            intent.putExtra("key", "fashion")
+            startActivity(intent)
+        }
+
+         dailyneedsbutton.setOnClickListener {
+            val intent = Intent(activity, kitchen::class.java)
+            intent.putExtra("key", "dailyneeds")
+            startActivity(intent)
+        }
+        stationerybutton.setOnClickListener {
+            val intent = Intent(activity, kitchen::class.java)
+            intent.putExtra("key", "stationery")
+            startActivity(intent)
+        }
+        toysandgames.setOnClickListener {
+            val intent = Intent(activity, kitchen::class.java)
+            intent.putExtra("key", "toysandgames")
+            startActivity(intent)
+        }
+        trendingbutton.setOnClickListener {
+            val intent = Intent(activity, Trending::class.java)
+            startActivity(intent)
+        }
+
+
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_home, container, false)
+        return view
     }
 
     companion object {
