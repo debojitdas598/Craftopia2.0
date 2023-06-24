@@ -4,22 +4,29 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.ImageView
 import android.widget.TextView
-import androidx.privacysandbox.tools.core.model.Types.double
+import android.widget.Toast
 import com.android.volley.Request
-import com.android.volley.Response
 import com.android.volley.toolbox.JsonObjectRequest
 import com.android.volley.toolbox.Volley
 import com.bumptech.glide.Glide
-import org.json.JSONObject
+import com.google.firebase.firestore.FirebaseFirestore
 
 class ItemPage : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
+
+        val mFirestore = FirebaseFirestore.getInstance()
+        var sellernametxt : String = ""
+        var imageurltxt : String = ""
+        var costpricetxt = ""
+        var productnametxt = ""
+
         setContentView(R.layout.activity_item_page)
         val img = findViewById<ImageView>(R.id.img);
         val sellername = findViewById<TextView>(R.id.sellerName);
         val productname = findViewById<TextView>(R.id.itemName);
         val productdetails = findViewById<TextView>(R.id.productdetails);
+        val addToCart = findViewById<ImageView>(R.id.addtocart)
         val sp = findViewById<TextView>(R.id.sp)
         val cp = findViewById<TextView>(R.id.cp)
         val discount = findViewById<TextView>(R.id.discountpercent)
@@ -34,11 +41,11 @@ class ItemPage : AppCompatActivity() {
                 // JSON object response
                 val jsonArray = response.getJSONArray(category);
                 val jsonObject = jsonArray.getJSONObject(index);
-                val sellernametxt = jsonObject.getString("sellername")
-                val productnametxt = jsonObject.getString("productname")
-                val imageurltxt = jsonObject.getString("imageurl")
+                sellernametxt = jsonObject.getString("sellername")
+                productnametxt = jsonObject.getString("productname")
+                imageurltxt = jsonObject.getString("imageurl")
                 val productdetailstxt = jsonObject.getString("productdetails")
-                val costpricetxt = jsonObject.getString("costprice")
+                costpricetxt = jsonObject.getString("costprice")
                 val sellingpricetxt = jsonObject.getString("sellingprice")
                 val ratingtxt = jsonObject.getString("rating")
 
@@ -70,6 +77,18 @@ class ItemPage : AppCompatActivity() {
         )
         queue.add(jsonObjectRequest)
 
+        addToCart.setOnClickListener {
 
+            val cart = Cart(sellernametxt,productnametxt,costpricetxt,imageurltxt,)
+            mFirestore.collection("CART_ITEMS")
+                .document()
+                .set(cart)
+                .addOnCompleteListener {
+                    Toast.makeText(this,"Successfully added",Toast.LENGTH_SHORT).show()
+                }
+                .addOnFailureListener {
+                    Toast.makeText(this,it.toString(),Toast.LENGTH_SHORT).show()
+                }
+        }
     }
 }
